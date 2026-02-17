@@ -1,0 +1,32 @@
+[
+  {
+    "name": "slope",
+    "path": "slope.tif",
+    "weight": 0.35,
+    "invert": true
+  },
+  {
+    "name": "roughness",
+    "path": "roughness.tif",
+    "weight": 0.25,
+    "invert": true
+  },
+  {
+    "name": "temp_max",
+    "path": "temp_max.tif",
+    "weight": 0.15,
+    "invert": true
+  },
+  {
+    "name": "temp_min",
+    "path": "temp_min.tif",
+    "weight": 0.15,
+    "invert": true
+  },
+  {
+    "name": "hydrogen",
+    "path": "hydrogen.tif",
+    "weight": 0.10,
+    "invert": false
+  }
+]

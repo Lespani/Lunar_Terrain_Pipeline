@@ -1,0 +1,21 @@
+trafficability_node:
+  ros__parameters:
+    geotiff_path: ""
+    layers_json: '[{"name":"slope","path":"slope.tif","weight":0.35,"invert":true},{"name":"roughness","path":"roughness.tif","weight":0.25,"invert":true},{"name":"temp_max","path":"temp_max.tif","weight":0.15,"invert":true},{"name":"temp_min","path":"temp_min.tif","weight":0.15,"invert":true},{"name":"hydrogen","path":"hydrogen.tif","weight":0.10,"invert":false}]'
+    map_frame: "lroc_map"
+    localization_topic: "/localization/pose"
+    global_grid_topic: "/lunar/trafficability/global_grid"
+    local_patch_topic: "/lunar/trafficability/local_patch"
+    projected_point_topic: "/lunar/trafficability/rover_projected"
+    free_threshold: 0.35
+    occupied_threshold: 0.65
+    invert_values: false
+    unknown_value: -1
+    patch_size_m: 20.0
+
+  # Multi-layer example for future use:
+  # layers_json: '[
+  #   {"name":"slope","path":"/data/lroc/slope.tif","weight":0.45,"invert":true},
+  #   {"name":"rock_abundance","path":"/data/lroc/rocks.tif","weight":0.35,"invert":true},
+  #   {"name":"mineral_proxy","path":"/data/lroc/mineral.tif","weight":0.20,"invert":false}
+  # ]'
